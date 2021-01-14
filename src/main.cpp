@@ -2,16 +2,16 @@
 #define STB_IMAGE_IMPLEMENTATION
 #define IMGUI_IMPL_OPENGL_LOADER_GLAD
 
-#include<glad/glad.h>
-#include<GLFW/glfw3.h>
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
-#include<glm/glm.hpp>
-#include<glm/gtc/matrix_transform.hpp>
-#include<glm/gtc/type_ptr.hpp>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
-#include"../ImGui/imgui.h"
-#include"../ImGui/impl/imgui_impl_glfw.h"
-#include"../ImGui/impl/imgui_impl_opengl3.h"
+#include "../ImGui/imgui.h"
+#include "../ImGui/impl/imgui_impl_glfw.h"
+#include "../ImGui/impl/imgui_impl_opengl3.h"
 
 #include <GLCamera.h>
 #include <GLShader.h>
@@ -20,7 +20,9 @@
 #include "../include/Lamp.h"
 #include "../include/SnowyArkGui.h"
 
-#include<iostream>
+#include <Windows.h>
+#include <iostream>
+#endif // !STB_IMAGE_IMPLEMENTATION
 
 //setting
 const unsigned int SCR_WIDTH = 1440;
@@ -30,7 +32,7 @@ bool showSnowyArkGui = true;
 
 int main()
 {
-	CreateWindow MainWindow(SCR_WIDTH, SCR_HEIGHT, "SnowyArk Ver0.0.1 Bate", nullptr, nullptr, false);
+	CreateWindows MainWindow(SCR_WIDTH, SCR_HEIGHT, "SnowyArk Ver0.0.1 Bate", nullptr, nullptr, false);
 	MainWindow.SetCallback();
 
 	//set ImGui
@@ -101,8 +103,10 @@ int main()
 		//render the triangle
 		//shader.SetVec4("triangleColor", glm::vec4(triangleColor.x, triangleColor.y, triangleColor.z, triangleColor.w));
 		//shader.use();
+		
 		glBindVertexArray(VAO);
 		glDrawArrays(GL_TRIANGLES, 0, 3);
+
 
 		ImGui::Render();
 		ImGui_ImplOpenGL3_RenderDrawData(ImGui::GetDrawData());
@@ -122,5 +126,5 @@ int main()
 	return 0;
 }
 
-#endif // !STB_IMAGE_IMPLEMENTATION
+
 

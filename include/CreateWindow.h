@@ -9,13 +9,13 @@
 //camera
 extern GLCamera camera;
 
-class CreateWindow
+class CreateWindows
 {
 public:
 	GLFWwindow* window;
 
-	CreateWindow(unsigned int width, unsigned int height, std::string title, GLFWmonitor* monitor, GLFWwindow* share, bool captureMouse);
-	~CreateWindow();
+	CreateWindows(unsigned int width, unsigned int height, std::string title, GLFWmonitor* monitor, GLFWwindow* share, bool captureMouse);
+	~CreateWindows();
 
 	GLFWwindow* CreateMainWindow(GLFWmonitor* monitor, GLFWwindow* share, bool captureMouse);
 
@@ -43,17 +43,17 @@ private:
 	void GLFWInit();
 
 	//framebuffer size callback function
-	static CreateWindow* FBSCb;
+	static CreateWindows* FBSCb;
 	void FrameBufferSizeCallback(GLFWwindow* window, int width, int height);
 	static void FrameBufferSizeCallbackFunc(GLFWwindow* window, int width, int height);
 
 	//mouse callback function
-	static CreateWindow* MCb;
+	static CreateWindows* MCb;
 	void MouseCallback(GLFWwindow* window, double xPos, double yPos);
 	static void MouseCallbackFunc(GLFWwindow* window, double xPos, double yPos);
 
 	//scroll callback function
-	static CreateWindow* SCb;
+	static CreateWindows* SCb;
 	void ScrollCallback(GLFWwindow* window, double xOffset, double yOffset);
 	static void ScrollCallbackFunc(GLFWwindow* window, double xOffset, double yOffset);
 };
