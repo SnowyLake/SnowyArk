@@ -1,4 +1,4 @@
-#include "..\include\Lamp.h"
+#include "..\include\lamp.h"
 
 //-----------------------public-------------------------
 Lamp::Lamp(std::vector<float> pointLightVertices, std::vector<glm::vec3> pointLightPositions)

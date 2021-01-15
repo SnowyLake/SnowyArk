@@ -24,18 +24,6 @@
     <ClCompile Include="src\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\CreateWindow.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Lamp.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Mesh.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Model.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="ImGui\imgui.cpp">
       <Filter>ImGui</Filter>
     </ClCompile>
@@ -54,23 +42,23 @@
     <ClCompile Include="OpenGLEnvironment\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="src\SnowyArkGui.cpp">
+    <ClCompile Include="src\create_window.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lamp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\model.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\snowyark_gui.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="include\CreateWindow.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Lamp.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Mesh.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Model.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="ImGui\imconfig.h">
       <Filter>ImGui</Filter>
     </ClInclude>
@@ -95,7 +83,25 @@
     <ClInclude Include="ImGui\impl\imgui_impl_opengl3.h">
       <Filter>ImGui\impl</Filter>
     </ClInclude>
-    <ClInclude Include="include\SnowyArkGui.h">
+    <ClInclude Include="include\create_window.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lamp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mesh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="include\snowyark_gui.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLEnvironment\include\gl_camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLEnvironment\include\gl_shader.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

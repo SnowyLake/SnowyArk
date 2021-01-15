@@ -25,12 +25,12 @@
     <ClCompile Include="ImGui\impl\imgui_impl_glfw.cpp" />
     <ClCompile Include="ImGui\impl\imgui_impl_opengl3.cpp" />
     <ClCompile Include="OpenGLEnvironment\glad.c" />
-    <ClCompile Include="src\CreateWindow.cpp" />
-    <ClCompile Include="src\Lamp.cpp" />
+    <ClCompile Include="src\create_window.cpp" />
+    <ClCompile Include="src\lamp.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\Mesh.cpp" />
-    <ClCompile Include="src\Model.cpp" />
-    <ClCompile Include="src\SnowyArkGui.cpp" />
+    <ClCompile Include="src\mesh.cpp" />
+    <ClCompile Include="src\model.cpp" />
+    <ClCompile Include="src\snowyark_gui.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ImGui\imconfig.h" />
@@ -41,11 +41,13 @@
     <ClInclude Include="ImGui\imstb_rectpack.h" />
     <ClInclude Include="ImGui\imstb_textedit.h" />
     <ClInclude Include="ImGui\imstb_truetype.h" />
-    <ClInclude Include="include\CreateWindow.h" />
-    <ClInclude Include="include\Lamp.h" />
-    <ClInclude Include="include\Mesh.h" />
-    <ClInclude Include="include\Model.h" />
-    <ClInclude Include="include\SnowyArkGui.h" />
+    <ClInclude Include="include\create_window.h" />
+    <ClInclude Include="include\lamp.h" />
+    <ClInclude Include="include\mesh.h" />
+    <ClInclude Include="include\model.h" />
+    <ClInclude Include="include\snowyark_gui.h" />
+    <ClInclude Include="OpenGLEnvironment\include\gl_camera.h" />
+    <ClInclude Include="OpenGLEnvironment\include\gl_shader.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

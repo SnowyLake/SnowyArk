@@ -1,19 +1,11 @@
+#include"../include/snowyark_gui.h"
+
 #if defined(_MSC_VER) && !defined(_CRT_SECURE_NO_WARNINGS)
 #define _CRT_SECURE_NO_WARNINGS
 #endif
 
-#include<glad/glad.h>
-#include<GLFW/glfw3.h>
-
-#include"../ImGui/imgui.h"
-#include"../include/SnowyArkGui.h"
 #ifndef IMGUI_DISABLE
-
-#include <ctype.h>          // toupper
-#include <limits.h>         // INT_MIN, INT_MAX
-#include <math.h>           // sqrtf, powf, cosf, sinf, floorf, ceilf
-#include <stdio.h>          // vsnprintf, sscanf, printf
-#include <stdlib.h>         // NULL, malloc, free, atoi
+#include"../ImGui/imgui.h"
 #if defined(_MSC_VER) && _MSC_VER <= 1500 // MSVC 2008 or earlier
 #include <stddef.h>         // intptr_t
 #else
@@ -65,26 +57,9 @@
 #define vsnprintf   _vsnprintf
 #endif
 
-// Helpers macros
-// We normally try to not use many helpers in imgui_demo.cpp in order to make code easier to copy and paste,
-// but making an exception here as those are largely simplifying code...
-// In other imgui sources we can use nicer internal functions from imgui_internal.h (ImMin/ImMax) but not in the demo.
-#define IM_MIN(A, B)            (((A) < (B)) ? (A) : (B))
-#define IM_MAX(A, B)            (((A) >= (B)) ? (A) : (B))
-#define IM_CLAMP(V, MN, MX)     ((V) < (MN) ? (MN) : (V) > (MX) ? (MX) : (V))
-
 //-----------------------------------------------------------------------------
 // [SECTION] Forward Declarations, Helpers
 //-----------------------------------------------------------------------------
-
-//setting Color
-ImVec4 triangleColor = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
-ImVec4 backgroundColor = ImVec4(0.20f, 0.20f, 0.20f, 1.00f);
-ImVec4 testTextColor = ImVec4(0.20f, 0.70f, 0.50f, 1.00f);
-
-// Forward Declarations
-
-
 
 // Helper to display a little (?) mark which shows a tooltip when hovered.
 // In your own code you may want to display an actual icon if you are using a merged icon fonts (see docs/FONTS.md)
@@ -100,6 +75,11 @@ static void HelpMarker(const char* desc)
         ImGui::EndTooltip();
     }
 }
+
+//setting Color
+ImVec4 triangleColor = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+ImVec4 backgroundColor = ImVec4(0.20f, 0.20f, 0.20f, 1.00f);
+ImVec4 testTextColor = ImVec4(0.20f, 0.70f, 0.50f, 1.00f);
 
 void ShowSnowyArkWindow(bool* p_open)
 {

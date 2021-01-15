@@ -1,4 +1,4 @@
-#include "..\include\CreateWindow.h"
+#include "..\include\create_window.h"
 
 //camera
 GLCamera camera(glm::vec3(0.0f, -8.0f, 20.0f));

@@ -1,12 +1,12 @@
 #pragma once
+#include<string>
+#include<vector>
+
 #include<glad/glad.h>
 #include<glm/glm.hpp>
 #include<glm/gtc/matrix_transform.hpp>
 
-#include<GLShader.h>
-
-#include<string>
-#include<vector>
+#include<gl_shader.h>
 
 struct Vertex
 {

@@ -1,13 +1,14 @@
 #pragma once
+#include<vector>
+#include<string>
+
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include<GLCamera.h>
-#include<GLShader.h>
+#include<gl_camera.h>
+#include<gl_shader.h>
 
-#include<vector>
-#include<string>
 class Lamp
 {
 public:

@@ -4,8 +4,7 @@
 #include<string>
 #include<iostream>
 
-#include<GLCamera.h>
-
+#include<gl_camera.h>
 //camera
 extern GLCamera camera;
 

@@ -1,20 +1,24 @@
 #pragma once
+#include<iostream>
+#include<fstream>
+#include<sstream>
+#include<string>
+#include<vector>
+
 #include<glad/glad.h>
+
 #include<glm/glm.hpp>
 #include<glm/gtc/matrix_transform.hpp>
+
 #include<stb_image.h>
 #include<assimp/Importer.hpp>
 #include<assimp/scene.h>
 #include<assimp/postprocess.h>
 
-#include<GLShader.h>
-#include"Mesh.h"
+#include<gl_shader.h>
+#include"mesh.h"
 
-#include<string>
-#include<fstream>
-#include<sstream>
-#include<iostream>
-#include<vector>
+
 //#include<map>
 
 unsigned int TextureFromFile(const char* path, const std::string& directory, bool gamma = false);

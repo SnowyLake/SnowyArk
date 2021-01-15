@@ -1,4 +1,4 @@
-#include "../include/Mesh.h"
+#include "../include/mesh.h"
 
 //-----------------------public-------------------------
 //constructor

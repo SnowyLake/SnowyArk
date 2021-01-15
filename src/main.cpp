@@ -1,6 +1,7 @@
-﻿#ifndef STB_IMAGE_IMPLEMENTATION
+﻿#define IMGUI_IMPL_OPENGL_LOADER_GLAD
 #define STB_IMAGE_IMPLEMENTATION
-#define IMGUI_IMPL_OPENGL_LOADER_GLAD
+
+#include <iostream>
 
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
@@ -13,16 +14,13 @@
 #include "../ImGui/impl/imgui_impl_glfw.h"
 #include "../ImGui/impl/imgui_impl_opengl3.h"
 
-#include <GLCamera.h>
-#include <GLShader.h>
-#include "../include/CreateWindow.h"
-#include "../include/Model.h"
-#include "../include/Lamp.h"
-#include "../include/SnowyArkGui.h"
+#include <gl_camera.h>
+#include <gl_shader.h>
 
-#include <Windows.h>
-#include <iostream>
-#endif // !STB_IMAGE_IMPLEMENTATION
+#include "../include/model.h"
+#include "../include/lamp.h"
+#include "../include/create_window.h"
+#include "../include/snowyark_gui.h"
 
 //setting
 const unsigned int SCR_WIDTH = 1440;
