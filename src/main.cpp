@@ -26,11 +26,15 @@
 const unsigned int SCR_WIDTH = 1440;
 const unsigned int SCR_HEIGHT = 960;
 
+const std::string APP_NAME = "SnowyArk";
+const std::string APP_VER = "0.1";
+const std::string APP_INFO = APP_NAME + "_Ver" + APP_VER;
+
 bool showSnowyArkGui = true;
 
 int main()
 {
-	CreateWindows MainWindow(SCR_WIDTH, SCR_HEIGHT, "SnowyArk Ver0.0.1 Bate", nullptr, nullptr, false);
+	CreateWindows MainWindow(SCR_WIDTH, SCR_HEIGHT, APP_INFO, nullptr, nullptr, false);
 	MainWindow.SetCallback();
 
 	//set ImGui
